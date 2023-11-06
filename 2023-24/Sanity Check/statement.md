@@ -1,0 +1,1 @@
+Join our [Discord server](https://discord.gg/A7AdKbtyW5) in case you haven't already.

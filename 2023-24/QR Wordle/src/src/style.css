@@ -1,0 +1,37 @@
+.qr-part{
+    position: absolute;
+    filter : none;
+    left:0;
+    top:0;
+    width:10vmin;
+    height:10vmin;
+    transition: left 0.2s ease, top 0.2s ease;
+}
+.qr-part.yellow{
+    filter : contrast(0.5) sepia(4) saturate(2.5);
+}
+.qr-part.green{
+    filter : contrast(0.5) sepia(4) hue-rotate(80deg) saturate(2.5);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+#container{
+    position: relative;
+    height: 80vmin;
+    width: 80vmin;
+    margin:auto;
+}
+.button {
+    background-color: #2fc2f3; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}

@@ -1,0 +1,2 @@
+It's an ASCII art QR code with '@' for black and ' ' for white with all the newlines removed.
+You should be able to reach the correct QR if you ensure that each line is exactly 80 characters and each character has the same width. You may replace '@' with '█' for better scanability.
