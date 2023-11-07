@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: rgb(61, 60, 60);
+            color: rgb(238, 255, 219);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            height: 100vh; 
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 1.5em;
+            margin: 0.5em;
+        }
+
+        input {
+            font-size: 1.5em;
+            margin: 0.5em;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Create a JSON object with the form data
+            const formData = {
+                username: username,
+                password: password
+            };
+
+            // Send a POST request with the form data as JSON
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    // Display the response content in the current document
+                    return response.text();
+                } else if (response.status === 302) {
+                    // Redirect status; follow the redirect
+                    window.location.href = response.headers.get('Location');
+                } else {
+                    throw new Error('Request failed with status ' + response.status);
+                }
+            })
+            .then(data => {
+                // Display the response content in the current document
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  flask-app:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    networks:
+      - mynetwork
+    depends_on:
+      - mongo-db
+    command: python3 init_db.py && python3 server.py
+  mongo-db:
+    image: mongo
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
