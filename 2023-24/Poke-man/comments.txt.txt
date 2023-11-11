@@ -1,0 +1,1 @@
+The provided file, mirror.txt, appears to be encoded in base64; however, direct conversion from base64 to text is unsuccessful. Upon reversing the text in mirror.txt and decoding it, a string resembling an esoteric language emerges. The encoded string is in Pikalang, and deciphering it reveals the flag.
