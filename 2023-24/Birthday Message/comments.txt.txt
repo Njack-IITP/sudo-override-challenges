@@ -1,0 +1,1 @@
+Examine the spectrogram of the provided audio file, and you'll notice distinct peaks and troughs. Assign a value of 1 to the peaks and 0 to the troughs, creating a binary sequence. When this binary string is translated into text, it reveals the flag.
