@@ -1,0 +1,1 @@
+My friend pulled a prank, sending an encrypted PDF and a key. I need your help to decrypt it fast and submit my assignment. You should have a solid cryptography base for this.

@@ -1,0 +1,1 @@
+It is a simple rust binary. You should be able to get the flag simply by running strings on the file.

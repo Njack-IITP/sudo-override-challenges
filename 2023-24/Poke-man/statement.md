@@ -1,0 +1,1 @@
+Tejas is a devoted Pokémon enthusiast. Officer Jenny has confiscated his laptop and provided him with this file to retrieve the password. Assist him in unlocking the laptop.

@@ -1,0 +1,1 @@
+Here we have a decrytor, but its broken for some reason Decryptor.cpp. And here we have a key somewhere in this file : key.txt, but where to use it?
