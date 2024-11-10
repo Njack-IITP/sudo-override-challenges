@@ -1,0 +1,1 @@
+m represents middle here. A byte has 8 bits and the middle bits would be the 4th and 5th bits. So, the flag is stored as ASCII in the 4th and 5th bits of the middle part of the image. I was lazy so the flag starts from floor(width/2), floor(height/2) instead of being perfectly centered.
