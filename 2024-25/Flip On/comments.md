@@ -1,0 +1,1 @@
+The hint and the name very heavily implies that the bits need to be flipped. The only catch is that the first 4 bytes of the file need to be left as is as they make up the zip file signature. 'flipper.py' shows a possible way to perform the mentioned operations.

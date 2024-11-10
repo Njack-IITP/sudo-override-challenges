@@ -1,0 +1,1 @@
+The title is 322 which hints to a base-3 to base-2 conversion. After doing that, we get some binary data. We pad it with 0s to make its length a multiple of 8. Then, we interpret each 8 bits as ASCII. That gives some obfuscated code. Here, we can either directly execute the obfuscated code to get the flag, or we can try using/making a deobfuscator.
